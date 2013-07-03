@@ -1,0 +1,51 @@
+"Vimium key binding for Vimperator
+map J gT
+map K gt
+"down
+map d <C-d>
+"up
+map u <C-u>
+map H <C-o>
+map L <C-i>
+noremap x d
+noremap X u
+noremap j 2j
+noremap k 2k
+set hintchars=sadfjklewcmpgh
+
+"" vertical bar CANNOT be used here
+set urlseparator=;
+
+" Display
+"" show only the tab bar
+set gui=tabs
+"" show numbers on each tab
+set tabnumbers
+"" see http://code.google.com/p/vimperator-labs/issues/detail?id=311
+set popups=tab,resized
+
+
+" Find
+"" perform incremental searching
+set incsearch
+"" highlight search results
+set hlsearch
+"" typically (see below) ignore case
+set ignorecase
+"" only consider case if an upper case char is used
+set smartcase
+
+"""" Downloads
+noremap  <C-j> <C-t>:downloads<CR>
+inoremap <C-j> <Esc><C-t>:downloads<CR>
+cnoremap <C-j> <C-t>:downloads<CR>
+"""" Insert Mode
+imap <C-t> <Esc><C-t>
+imap <C-w> <Esc><C-w>
+"""" Command Mode
+cmap <C-k> <Esc><C-k>
+cmap <C-l> <Esc><C-l>
+cmap <C-t> <Esc><C-t>
+
+
+

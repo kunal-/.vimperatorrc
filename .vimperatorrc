@@ -14,5 +14,7 @@ noremap [ [[
 "set guioptions=T
 " set go+=m
 
-
+" Use Ctrl-R to load the current page in Firefox reader mode
+command reader execute "open about:reader?url=" + content.location.href
+nmap <C-r> :reader <CR>
 
